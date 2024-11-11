@@ -1,0 +1,10 @@
+{
+android.graphics.drawable.GradientDrawable SketchUi = new android.graphics.drawable.GradientDrawable();
+int d = (int) getApplicationContext().getResources().getDisplayMetrics().density;
+int clrs [] = {0xFF2193B0,0xFF6DD5ED};
+SketchUi= new android.graphics.drawable.GradientDrawable(android.graphics.drawable.GradientDrawable.Orientation.TOP_BOTTOM, clrs);
+mohammadasif.setElevation(d*14);
+android.graphics.drawable.RippleDrawable SketchUi_RD = new android.graphics.drawable.RippleDrawable(new android.content.res.ColorStateList(new int[][]{new int[]{}}, new int[]{0xFF97FF53}), SketchUi, null);
+mohammadasif.setBackground(SketchUi_RD);
+mohammadasif.setClickable(true);
+}
